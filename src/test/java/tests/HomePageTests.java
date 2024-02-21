@@ -28,7 +28,7 @@ public class HomePageTests extends TestBase {
      @Tag("smoke")
      @Test
      public void cookiePopupTest () {
-         step("Проверяем отображние попапа cookie", () ->
+         step("Проверяем отображение попапа cookie", () ->
                  cookie.checkCookiePopupDisplay());
          step("Принимаем cookie", () ->
                  cookie.acceptCookie());

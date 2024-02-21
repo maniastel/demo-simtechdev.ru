@@ -23,7 +23,7 @@ public class TestBase {
         Configuration.baseUrl =System.getProperty("baseUrl", "https://simtechdev.ru");
         Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "101");
+        Configuration.browserVersion = System.getProperty("version", "100.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.timeout = 10000;
         Configuration.pageLoadStrategy = "eager";
