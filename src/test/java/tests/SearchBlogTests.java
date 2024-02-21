@@ -12,6 +12,7 @@ import pages.components.SearchBar;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Tag("search")
 @DisplayName("Проверка поиска на странице Блог")
 public class SearchBlogTests extends TestBase{
 

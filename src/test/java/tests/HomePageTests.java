@@ -10,6 +10,7 @@ import pages.components.TopBanner;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Tag("homepage")
 @DisplayName("Тесты для домашней страницы")
 public class HomePageTests extends TestBase {
      MainMenu menu = new MainMenu();

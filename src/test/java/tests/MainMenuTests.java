@@ -12,6 +12,7 @@ import pages.components.MainMenu;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Tag("main_menu")
 @DisplayName("Проверка ссылок в главном меню")
 public class MainMenuTests extends TestBase{
     MainMenu menu = new MainMenu();
