@@ -1,13 +1,13 @@
 package tests;
 
 import org.junit.jupiter.api.*;
+import pages.HomePage;
 import pages.OnlineStoreAdvancementPage;
 import pages.components.CookiePopup;
 import pages.components.MainMenu;
 import pages.components.RequestForm;
 import pages.components.TopBanner;
 
-import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("homepage")
@@ -17,11 +17,13 @@ public class HomePageTests extends TestBase {
      RequestForm form = new RequestForm();
      CookiePopup cookie = new CookiePopup();
      TopBanner  banner = new TopBanner();
+     HomePage hp = new HomePage();
      OnlineStoreAdvancementPage page = new OnlineStoreAdvancementPage();
 
     @BeforeEach
     public void setUp() {
-        open("");
+        step("Открываем домашнюю страницу", () ->
+                hp.openHomePage());
     }
 
      @DisplayName("Принятие соглашение об использовании cookie")

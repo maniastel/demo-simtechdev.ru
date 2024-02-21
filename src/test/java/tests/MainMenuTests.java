@@ -7,19 +7,21 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
+import pages.HomePage;
 import pages.components.MainMenu;
 
-import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("main_menu")
 @DisplayName("Проверка ссылок в главном меню")
 public class MainMenuTests extends TestBase{
     MainMenu menu = new MainMenu();
+    HomePage hp = new HomePage();
 
     @BeforeEach
     public void setUp() {
-        open("");
+        step("Открываем домашнюю страницу", () ->
+                hp.openHomePage());
     }
 
     @ValueSource(strings = {
