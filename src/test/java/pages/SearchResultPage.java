@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.CollectionCondition;
-import pages.components.SearchBar;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;

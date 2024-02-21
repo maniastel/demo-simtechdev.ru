@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.components.TopBanner;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Configuration.baseUrl;
