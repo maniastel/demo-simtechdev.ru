@@ -13,6 +13,7 @@ import pages.components.MainMenu;
 import static io.qameta.allure.Allure.step;
 
 @Tag("main_menu")
+@Tag("smoke")
 @DisplayName("Проверка ссылок в главном меню")
 public class MainMenuTests extends TestBase{
     MainMenu menu = new MainMenu();
@@ -28,7 +29,6 @@ public class MainMenuTests extends TestBase{
             "Решения", "Услуги", "CS-Cart", "Инфраструктура", "О компании", "Блог", "Helpdesk"
     })
     @ParameterizedTest(name = "Проверка наличия ссылки {0} в главном меню")
-    @Tag("smoke")
     public void mainMenuLinksTest (String menuLink) {
         step("Проверяем название ссылки {0} в главном меню хедера", () ->
                 menu.checkMenuLinks(menuLink));
@@ -36,7 +36,6 @@ public class MainMenuTests extends TestBase{
 
     @CsvFileSource(resources = "/test_data/data.csv")
     @ParameterizedTest(name = "Переход на страницу подкатегории {1} категории {0}")
-    @Tag("smoke")
     public void openSubcategoryPageTest (String category, String subcategory, String title) {
         step("Выбираем подкатегорию", () ->
                 menu.selectSubcategory(category, subcategory));
@@ -44,12 +43,10 @@ public class MainMenuTests extends TestBase{
                 menu.checkOpenCategoryPage(title));
     }
 
-    @ValueSource(strings = {"Helpdesk"})
-    @ParameterizedTest(name = "Проверка открытия формы авторизации в Helpdesk")
-    @Tag("smoke")
+    @DisplayName("Проверка открытия формы авторизации в Helpdesk")
     public void openHelpDeskPageTest (String category) {
         step("Нажимаем на ссылку HelpDesk в главном меню", () ->
-                menu.selectCategory(category));
+                menu.selectCategory("HelpDesk"));
         step("Проверяем открытие страница авторизации в HelpDesk", () ->
                 menu.openHelpDeskPage());
     }

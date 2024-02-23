@@ -63,9 +63,4 @@ public class OnlineStoreAdvancementPage {
         submitButton.shouldHave(attribute("type", "submit"))
                 .shouldHave(text("Получить руководство"));
     }
-
-    public void closePage () {
-        closeWindow();
-        switchTo().window(0);
-    }
 }

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class TopBanner {
-    SelenideElement banner = $(".elementor-sticky--effects.elementor-sticky--active.elementor-section--handles-inside"),
+    private final SelenideElement banner = $(".elementor-sticky--effects.elementor-sticky--active.elementor-section--handles-inside"),
                     bannerButton = $(byTagAndText("div", "Получить руководство"));
 
     public void checkTopBannerDisplay () {

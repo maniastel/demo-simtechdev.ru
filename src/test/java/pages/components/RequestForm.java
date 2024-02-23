@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RequestForm {
-    SelenideElement formTitle = $(byTagAndText("span", "Обсудим ваш проект?")),
+    private final SelenideElement formTitle = $(byTagAndText("span", "Обсудим ваш проект?")),
                     nameField = $("#form-field-first_name"),
                     phoneField = $("#form-field-phone_number"),
                     emailField = $("#form-field-email"),

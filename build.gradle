@@ -34,7 +34,8 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "org.awaitility:awaitility:4.2.0")
+            "org.awaitility:awaitility:4.2.0",
+            'com.github.javafaker:javafaker:1.0.2')
     testRuntimeOnly (
             "org.slf4j:slf4j-simple:$slf4jVersion")
 }
@@ -60,10 +61,15 @@ task main_menu(type: Test) {
     }
 }
 
-task serch (type: Test) {
+task search (type: Test) {
     useJUnitPlatform {
         includeTags("search")
     }
 }
 
+task subscription (type: Test) {
+    useJUnitPlatform {
+        includeTags("subscription")
+    }
+}
 

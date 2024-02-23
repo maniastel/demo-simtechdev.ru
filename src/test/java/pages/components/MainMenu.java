@@ -13,8 +13,8 @@ import static com.codeborne.selenide.WebDriverConditions.urlStartingWith;
 
 public class MainMenu {
 
-    SelenideElement formButton = $(byTagAndText("span", "Оставить заявку"));
-    String hdUrl = "https://helpdesk.simtechdev.com/index.php?dispatch=auth.login_form";
+    private final SelenideElement formButton = $(byTagAndText("span", "Оставить заявку"));
+    private final String hdUrl = "https://helpdesk.simtechdev.com/index.php?dispatch=auth.login_form";
 
     public MainMenu checkMenuLinks (String menuLink) {
         $$("ul#menu-header-glavnoe-menyu-2023").shouldHave(texts(menuLink));
@@ -42,8 +42,6 @@ public class MainMenu {
         switchTo().window(1);
         webdriver().shouldHave(urlStartingWith(hdUrl));
         $("h1").shouldHave(text("Sign in"));
-//        closeWindow();
-//        switchTo().window(0);
     }
 
     public void clickOnFormButton () {

@@ -11,6 +11,7 @@ import pages.components.TopBanner;
 import static io.qameta.allure.Allure.step;
 
 @Tag("homepage")
+@Tag("smoke")
 @DisplayName("Тесты для домашней страницы")
 public class HomePageTests extends TestBase {
      MainMenu menu = new MainMenu();
@@ -27,7 +28,6 @@ public class HomePageTests extends TestBase {
     }
 
      @DisplayName("Принятие соглашение об использовании cookie")
-     @Tag("smoke")
      @Test
      public void cookiePopupTest () {
          step("Проверяем отображение попапа cookie", () ->
@@ -37,7 +37,6 @@ public class HomePageTests extends TestBase {
      }
 
      @DisplayName("Отображение названий полей формы отправки запроса")
-     @Tag("smoke")
      @Test
      public void formFieldShouldBeExpectedTest() {
          step("Нажимаем на кнопку Оставить заявку", () ->

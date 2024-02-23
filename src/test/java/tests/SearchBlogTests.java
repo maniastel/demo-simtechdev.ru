@@ -13,6 +13,7 @@ import pages.components.SearchBar;
 import static io.qameta.allure.Allure.step;
 
 @Tag("search")
+@Tag("smoke")
 @DisplayName("Проверка поиска на странице Блог")
 public class SearchBlogTests extends TestBase{
 
@@ -28,7 +29,6 @@ public class SearchBlogTests extends TestBase{
 
     @ValueSource(strings = {"товары", "маркетплейс"} )
     @ParameterizedTest(name = "Поиск {0} на странице Блог")
-    @Tag("smoke")
     public void searchOnBlogPageTest (String searchQuery) {
         step("Вводим поисковое значение в поле поиска", () ->
                 searchBar.setSearchQuery(searchQuery));
@@ -36,9 +36,8 @@ public class SearchBlogTests extends TestBase{
                 search.checkSearchResult(searchQuery));
     }
 
-    @ValueSource(strings = {"продукт"})
+    @ValueSource(strings = {"продукт", "разработка"})
     @ParameterizedTest(name = "Открытие статьи на странице результата поиска статей по: {0}")
-    @Tag("smoke")
     public void openBlogArticleOnSearchResultPageTest (String searchQuery) {
         step("Вводим поисковое значение в поле поиска", () ->
                 searchBar.setSearchQuery(searchQuery));

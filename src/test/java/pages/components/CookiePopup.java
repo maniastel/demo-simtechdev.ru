@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CookiePopup {
-    SelenideElement cookiePopup = $("#elementor-popup-modal-22363"),
+    private final SelenideElement cookiePopup = $("#elementor-popup-modal-22363"),
                     acceptButton = $(byTagAndText("span", "Согласен"));
 
     public void checkCookiePopupDisplay () {
