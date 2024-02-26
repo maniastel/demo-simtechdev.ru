@@ -17,7 +17,7 @@ public class MainMenu {
     private final String hdUrl = "https://helpdesk.simtechdev.com/index.php?dispatch=auth.login_form";
 
     public MainMenu checkMenuLinks (String menuLink) {
-        $$("ul#menu-header-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-2023").shouldHave(texts(menuLink));
+        $$("ul.elementskit-navbar-nav.elementskit-menu-po-left.submenu-click-on-icon").shouldHave(texts(menuLink));
         return this;
     }
 
