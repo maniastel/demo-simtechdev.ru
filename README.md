@@ -40,6 +40,15 @@ ____
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
 
+- Язык для написания тестов : [Java](https://www.java.com/ru/)
+- Фреймворк для модульного тестирования : [Junit5](https://github.com/junit-team/junit5)
+- Система автоматической сборки : [Gradle](https://github.com/gradle)
+- Удаленный запуск с выбором параметров для тестов реализован при помощи :  [Jenkins](https://www.jenkins.io/)
+- Отчеты о пройденных тестах формируются при помощи : [Allure](https://github.com/allure-framework)
+- Так же отчеты о тестировании отправляются в мессенджер при помощи <code>Telegram</code> бота
+- Реализована интеграция  с [Allure TestOps](https://qameta.io/)
+- Реализована интеграция с [Jira Software](https://www.atlassian.com/software/jira)
+
 ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
@@ -56,10 +65,10 @@ ____
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C23-MariaStel-jenkins-unit17)</a>
+## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C23-MariaStel-demo-simtechdev.ru/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/C23-MariaStel-jenkins-unit17/"><img src="images/screen/jenkins.png" alt="Jenkins" width="950"/></a>  
+<a href="https://jenkins.autotests.cloud/job/C23-MariaStel-demo-simtechdev.ru/"><img src="images/screen/jenkins.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 
@@ -68,6 +77,7 @@ ____
 - *browser (браузер, по умолчанию chrome)*
 - *browserVersion (версия браузера, по умолчанию 100.0)*
 - *browserSize (размер окна браузера, по умолчанию 1920x1080)*
+- *task (выбор группы тестов для запуска, по умолчанию все: test)*
 - *baseUrl (адрес тестируемого веб-сайта)*
 - *remoteUrl (логин, пароль и адрес удаленного сервера Selenoid)*
 
@@ -81,12 +91,12 @@ gradle clean test
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-clean X5Group_test
-"-Dbrowser=${browser}"
-"-DbrowserVersion=${browserVersion}"
-"-DbrowserSize=${browserSize}"
-"-DUrl=${baseUrl}"
-"-Dselenoid=${selenoid}"
+clean ${TASK}
+-Dbrowser=${browser}
+-DbrowserVersion=${browserVersion}
+-DbrowserSize=${browserSize}
+-DUrl=${baseUrl}
+-Dselenoid=${selenoid}
 ```
 ___
 <a id="allure"></a>
@@ -96,13 +106,13 @@ ___
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/screen/allure-report-overview.png" width="850">  
+<img title="Allure Overview Dashboard" src="images/screen/allure-dashboard.png" width="850">  
 </p>  
 
 ### *Тест-кейсы*
 
 <p align="center">  
-<img title="Allure Tests" src="images/screen/allure-report-test-cases.png" width="850">  
+<img title="Allure Tests" src="images/screen/allure-test-cases.png" width="850">  
 </p>
 
 ### *Графики*
@@ -132,7 +142,7 @@ ____
 ### *Авто тест-кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="images/screen/automated-test-cases.png" width="850">  
+<img title="Allure TestOps Tests" src="images/screen/test-ops-automated-test-cases.png" width="850">  
 </p>
 
 ___
@@ -148,7 +158,7 @@ ____
 ## <img alt="Telegram" height="25" src="images/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
-<img title="Telegram" src="images/screen/telegram.png" width="550">  
+<img title="Telegram" src="images/screen/telegram-ui.png" width="550">  
 </p>
 
 ____
