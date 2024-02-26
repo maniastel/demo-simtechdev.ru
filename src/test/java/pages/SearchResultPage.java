@@ -18,7 +18,7 @@ public class SearchResultPage {
     }
 
     public void openFirstArticlePage () {
-        $$("article").first().click();
+        $$("h3").first().click();
     }
 
     public void checkArticlePage () {
