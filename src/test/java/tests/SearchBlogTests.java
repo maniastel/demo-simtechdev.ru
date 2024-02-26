@@ -36,7 +36,7 @@ public class SearchBlogTests extends TestBase{
                 search.checkSearchResult(searchQuery));
     }
 
-    @ValueSource(strings = {"продукт", "разработка"})
+    @ValueSource(strings = {"продукт", "промоакции"})
     @ParameterizedTest(name = "Открытие статьи на странице результата поиска статей по: {0}")
     public void openBlogArticleOnSearchResultPageTest (String searchQuery) {
         step("Вводим поисковое значение в поле поиска", () ->
