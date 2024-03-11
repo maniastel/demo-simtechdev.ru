@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="changed readme.md">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/sd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/pdf-test.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/remote.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/data/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OnlineStoreAdvancementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OnlineStoreAdvancementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/components/RequestForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/components/RequestForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SubscriptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SubscriptionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="simtechdev.ru" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="simtechdev.ru" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="simtechdev.ru" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2azs1Q0g9J4gMxj4RDajmVFQl7r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.HomePageTests.cookiePopupTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HomePageTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainMenuTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainMenuTests.mainMenuLinksTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainMenuTests.openHelpDeskPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RequestFormTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SearchBlogTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubscriptionTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubscriptionTests.subscribeUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.simtechdev.ru [allureServe].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariastelmah/IdeaProjects/simtechdev.ru/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/java/configs" />
+      <recent name="$PROJECT_DIR$/images/logo" />
+      <recent name="$PROJECT_DIR$/images/screen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/screen" />
+      <recent name="$PROJECT_DIR$/notifications" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.simtechdev.ru [allureServe]">
+    <configuration name="HomePageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.HomePageTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="HomePageTests.cookiePopupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.HomePageTests.cookiePopupTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SubscriptionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":subscription" />
+            <option value="--tests" />
+            <option value="&quot;tests.SubscriptionTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SubscriptionTests.subscribeUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":subscription" />
+            <option value="--tests" />
+            <option value="&quot;tests.SubscriptionTests.subscribeUserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="simtechdev.ru [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureServe" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.simtechdev.ru [allureServe]" />
+        <item itemvalue="Gradle.SubscriptionTests" />
+        <item itemvalue="Gradle.SubscriptionTests.subscribeUserTest" />
+        <item itemvalue="Gradle.HomePageTests" />
+        <item itemvalue="Gradle.HomePageTests.cookiePopupTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="" />
+      <created>1705332525839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705332525839</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added tests">
+      <option name="closed" value="true" />
+      <created>1708495897555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708495897555</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removed imports">
+      <option name="closed" value="true" />
+      <created>1708496044380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708496044380</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added task tags">
+      <option name="closed" value="true" />
+      <created>1708497517822</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708497517822</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1708498867392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708498867392</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added notifications">
+      <option name="closed" value="true" />
+      <created>1708516304485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708516304486</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1708516420599</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708516420599</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added pages">
+      <option name="closed" value="true" />
+      <created>1708522576459</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708522576459</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added readme.md">
+      <option name="closed" value="true" />
+      <created>1708527386891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708527386891</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed comments, added new tests for subscription">
+      <option name="closed" value="true" />
+      <created>1708707388410</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708707388410</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added timeout">
+      <option name="closed" value="true" />
+      <created>1708711993042</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708711993042</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed locator for main menu element">
+      <option name="closed" value="true" />
+      <created>1708939325118</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708939325118</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed locator for main menu element">
+      <option name="closed" value="true" />
+      <created>1708940808199</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708940808199</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changed search term">
+      <option name="closed" value="true" />
+      <created>1708940895827</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708940895827</updated>
+    </task>
+    <task id="LOCAL-00014" summary="changed css locator">
+      <option name="closed" value="true" />
+      <created>1708956984846</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708956984846</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changed css locator">
+      <option name="closed" value="true" />
+      <created>1708957412435</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708957412435</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changed configuration telegram.json">
+      <option name="closed" value="true" />
+      <created>1708957603849</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708957603849</updated>
+    </task>
+    <task id="LOCAL-00017" summary="changed css locator">
+      <option name="closed" value="true" />
+      <created>1708957798356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708957798356</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changed readme.md">
+      <option name="closed" value="true" />
+      <created>1708959551753</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708959551753</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added tests" />
+    <MESSAGE value="removed imports" />
+    <MESSAGE value="added task tags" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="added notifications" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="added pages" />
+    <MESSAGE value="added readme.md" />
+    <MESSAGE value="fixed comments, added new tests for subscription" />
+    <MESSAGE value="added timeout" />
+    <MESSAGE value="fixed locator for main menu element" />
+    <MESSAGE value="changed search term" />
+    <MESSAGE value="changed configuration telegram.json" />
+    <MESSAGE value="changed css locator" />
+    <MESSAGE value="changed readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed readme.md" />
+  </component>
+</project>

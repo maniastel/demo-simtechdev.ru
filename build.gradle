@@ -12,8 +12,7 @@ def     slf4jVersion = "2.0.9",
         allureVersion = "2.24.0",
         awaitilityVersion = "4.2.0",
         javafakerVersion = "1.0.2",
-        ownerVersion = "1.0.12",
-        webdrivermanagerVersion = "5.2.1"
+        ownerVersion = "1.0.12"
 
 allure {
     report {
@@ -41,7 +40,7 @@ dependencies {
             "org.awaitility:awaitility:$awaitilityVersion",
             "com.github.javafaker:javafaker:$javafakerVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
-            "io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion")
+            "io.github.bonigarcia:webdrivermanager:5.6.3")
     testRuntimeOnly (
             "org.slf4j:slf4j-simple:$slf4jVersion")
 }

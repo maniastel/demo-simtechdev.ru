@@ -20,17 +20,18 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
     @BeforeAll
-    static void webConfig() {
+    static void beforeAll() {
+        WebDriverConfig webDriverConfig = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
-        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-
-        Configuration.baseUrl = config.getBaseUrl();
-        Configuration.browser = config.getBrowser();
-        Configuration.browserVersion = config.getBrowserVersion();
-        Configuration.browserSize = config.getBrowserSize();
+        Configuration.baseUrl = webDriverConfig.baseUrl();
+        Configuration.browser = webDriverConfig.browser();
+        Configuration.browserVersion = webDriverConfig.browserVersion();
+        Configuration.browserSize = webDriverConfig.browserSize();
         Configuration.pageLoadStrategy = "eager";
-        if (config.isRemote()) {
-            Configuration.remote = String.valueOf(config.getRemoteUrl());
+        Configuration.timeout = 3000;
+
+        if (webDriverConfig.isRemote()) {
+            Configuration.remote = String.valueOf(webDriverConfig.remoteUrl());
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.of(
                     "enableVNC", true,
