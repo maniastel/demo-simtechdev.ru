@@ -59,7 +59,7 @@ public class HomePageTests extends TestBase {
          step("Заполняем поле Описание", () ->
                  form.fillMessageField(data.message));
          step("Загружаем файл", () ->
-                 form.uploadFile("pdf-test.pdf"));
+                 form.uploadFile("test_data/pdf-test.pdf"));
          step("Нажимаем на кнопку Отправить", () ->
                  form.sendForm());
          step("Проверяем сообщение об успешной отправке формы", () ->
