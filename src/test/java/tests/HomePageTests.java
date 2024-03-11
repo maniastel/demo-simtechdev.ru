@@ -1,5 +1,6 @@
 package tests;
 
+import data.TestData;
 import org.junit.jupiter.api.*;
 import pages.HomePage;
 import pages.OnlineStoreAdvancementPage;
@@ -11,7 +12,6 @@ import pages.components.TopBanner;
 import static io.qameta.allure.Allure.step;
 
 @Tag("homepage")
-@Tag("smoke")
 @DisplayName("Тесты для домашней страницы")
 public class HomePageTests extends TestBase {
      MainMenu menu = new MainMenu();
@@ -20,6 +20,7 @@ public class HomePageTests extends TestBase {
      TopBanner  banner = new TopBanner();
      HomePage hp = new HomePage();
      OnlineStoreAdvancementPage page = new OnlineStoreAdvancementPage();
+     TestData data = new TestData();
 
     @BeforeEach
     public void setUp() {
@@ -36,34 +37,36 @@ public class HomePageTests extends TestBase {
                  cookie.acceptCookie());
      }
 
-     @DisplayName("Отображение названий полей формы отправки запроса")
+     @DisplayName("Отправка формы с заполнением всех полей")
      @Test
-     public void formFieldShouldBeExpectedTest() {
+     public void successfulFormSendTest() {
          step("Нажимаем на кнопку Оставить заявку", () ->
                  menu.clickOnFormButton());
          step("Проверяем название заголовка формы", () ->
                  form.checkTitleForm());
-         step("Проверяем поле Имя на наличие обязательных атрибутов", () ->
-                 form.checkNameField());
-         step("Проверяем поле Телефон на наличие обязательных атрибутов", () ->
-                 form.checkPhoneField());
-         step("Проверяем поле Email на наличие обязательных атрибутов", () ->
-                 form.checkEmailField());
-         step("Проверяем поле Компания/Сайт на наличие обязательных атрибутов", () ->
-                 form.checkCompanyField());
-         step("Проверяем поле Должность на наличие обязательных атрибутов", () ->
-                 form.checkJobTitleField());
-         step("Проверяем выпадающий список выбора услуги на наличие обязательных атрибутов", () ->
-                 form.checkRequestTypeSelect());
-         step("Проверяем поле Описание на наличие обязательных атрибутов", () ->
-                 form.checkMessageField());
-         step("Проверяем поле загрузки файла на наличие обязательных атрибутов", () ->
-                 form.checkUploadFile());
-         step("Проверяем кнопку Отправить на наличие обязательных атрибутов", () ->
-                 form.checkSubmitButton());
+         step("Заполняем поле Имя", () ->
+                 form.fillNameField(data.name));
+         step("Заполняем поле Телефон", () ->
+                 form.fillPhoneField(data.phone));
+         step("Заполняем поле Email", () ->
+                 form.fillEmailField(data.email));
+         step("Заполняем поле Компания/Сайт", () ->
+                 form.fillCompanyField(data.company));
+         step("Заполняем поле Должность", () ->
+                 form.fillJobTitleField(data.jobTitle));
+         step("Выбираем значение из выпадающего списка выбора услуги", () ->
+                 form.selectRequestType(data.requestType));
+         step("Заполняем поле Описание", () ->
+                 form.fillMessageField(data.message));
+         step("Загружаем файл", () ->
+                 form.uploadFile("pdf-test.pdf"));
+         step("Нажимаем на кнопку Отправить", () ->
+                 form.sendForm());
+         step("Проверяем сообщение об успешной отправке формы", () ->
+                 form.checkSendForm());
      }
 
-     @DisplayName("Отображение топ баннера с ссылкой")
+     @DisplayName("Проверка отображение топ баннера с ссылкой на страницу Продвижение интернет-магазина с формой обратной связи")
      @Tag("smoke")
      @Test
      public void topBannerTest () {
@@ -75,18 +78,18 @@ public class HomePageTests extends TestBase {
                  page.checkPageOpen());
          step("Проверяем название заголовка страницы", () ->
                  page.checkPageTitle());
-         step("Проверяем поле Имя на наличие обязательных атрибутов", () ->
-                 page.checkFirstNameField());
-         step("Проверяем поле Фамилия на наличие обязательных атрибутов", () ->
-                 page.checkLastNameField());
-         step("Проверяем поле Email на наличие обязательных атрибутов", () ->
-                 page.checkEmailField());
-         step("Проверяем поле Компания на наличие обязательных атрибутов", () ->
-                 page.checkCompanyField());
-         step("Проверяем чекбокс подписки на наличие обязательных атрибутов", () ->
-                 page.checkSubsCheckbox());
-         step("Проверяем кнопку Отправить на наличие обязательных атрибутов", () ->
-                 page.checkSubmitButton());
+         step("Заполняем поле Имя", () ->
+                 page.fillFirstNameField(data.firstName));
+         step("Заполняем поле Фамилия", () ->
+                 page.fillLastNameField(data.lastName));
+         step("Заполняем поле Email", () ->
+                 page.fillEmailField(data.email));
+         step("Заполняем поле Компания", () ->
+                 page.fillCompanyField(data.company));
+         step("Нажимаем на кнопку Отправить", () ->
+                 page.sendForm());
+         step("Проверяем сообщение об успешной отправке формы", () ->
+                 page.checkSendForm());
      }
 
 }

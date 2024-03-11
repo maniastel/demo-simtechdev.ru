@@ -16,65 +16,50 @@ public class RequestForm {
                     requestTypeSelect = $("#form-field-type_of_request"),
                     messageField = $("#form-field-message"),
                     uploadFile = $("#form-field-field_6894ad8"),
-                    submitButton = $("#submit_cta_btn");
+                    submitButton = $("#submit_cta_btn"),
+                    successfulMessage = $(".elementor-message.elementor-message-success");
 
     public void checkTitleForm () {
         formTitle.shouldHave(text("Обсудим ваш проект?"));
     }
 
-    public void checkNameField () {
-        nameField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Имя *"))
-                .shouldHave(attribute("required"));
+    public void fillNameField (String name) {
+        nameField.setValue(name);
     }
 
-    public void checkPhoneField () {
-        phoneField.shouldHave(attribute("type", "tel"))
-                .shouldHave(attribute("placeholder", "Телефон *"))
-                .shouldHave(attribute("required"));
+    public void fillPhoneField (String phone) {
+        phoneField.setValue(phone);
     }
 
-    public void checkEmailField () {
-        emailField.shouldHave(attribute("type", "email"))
-                .shouldHave(attribute("placeholder", "Email *"))
-                .shouldHave(attribute("required"));
+    public void fillEmailField (String email) {
+        emailField.setValue(email);
     }
 
-    public void checkCompanyField () {
-        companyField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Компания / Сайт *"))
-                .shouldHave(attribute("required"));
+    public void fillCompanyField (String company) {
+        companyField.setValue(company);
     }
 
-    public void checkJobTitleField () {
-        jobTitleField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Должность"))
-                .shouldNotHave(attribute("required"));
+    public void fillJobTitleField (String jobTitle) {
+        jobTitleField.setValue(jobTitle);
     }
 
-    public void checkRequestTypeSelect () {
-        requestTypeSelect.shouldHave(attribute("required"))
-                .$$("option").first().shouldHave(text("Выберите услугу *"));
+    public void selectRequestType (String option) {
+        requestTypeSelect.selectOptionByValue(option);
     }
 
-    public void checkMessageField () {
-        messageField.shouldHave(attribute("placeholder", "Опишите свою идею"))
-                .shouldNotHave(attribute("required"));
+    public void fillMessageField (String message) {
+        messageField.setValue(message);
     }
 
-    public void checkUploadFile () {
-        uploadFile.shouldHave(attribute("type", "file"))
-                .shouldNotHave(attribute("required"));
+    public void uploadFile (String file) {
+        uploadFile.uploadFromClasspath(file);
     }
 
-    public void checkSubmitButton () {
-        submitButton.shouldHave(attribute("type", "submit"))
-                .shouldHave(text("Отправить"));
+    public void sendForm () {
+        submitButton.click();
     }
 
-
-
-
-
-
+    public void checkSendForm () {
+        successfulMessage.shouldHave(text("Спасибо! Мы получили ваше сообщение"));
+    }
 }

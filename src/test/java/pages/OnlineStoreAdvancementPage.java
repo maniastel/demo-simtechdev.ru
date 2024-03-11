@@ -16,7 +16,7 @@ public class OnlineStoreAdvancementPage {
             emailField = $("#form-field-email"),
             companyField = $("#form-field-company_name"),
             submitButton = $(".elementor-button.elementor-size-sm"),
-            subsCheckbox = $("#form-field-checkbox-0");
+            successfulMessage = $(".elementor-message.elementor-message-success");
     String pageUrl = "/prodvizhenie-internet-magazina/";
 
     public void checkPageOpen () {
@@ -28,39 +28,27 @@ public class OnlineStoreAdvancementPage {
         titlePage.shouldHave(text("Продвижение интернет‑магазина"));
     }
 
-    public void checkFirstNameField () {
-        firstNameField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Имя *"))
-                .shouldHave(attribute("required"));
+    public void fillFirstNameField (String firstName) {
+        firstNameField.setValue(firstName);
     }
 
-    public void checkLastNameField () {
-       lastNameField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Фамилия *"))
-                .shouldHave(attribute("required"));
+    public void fillLastNameField (String lastName) {
+       lastNameField.setValue(lastName);
     }
 
-    public void checkEmailField () {
-        emailField.shouldHave(attribute("type", "email"))
-                .shouldHave(attribute("placeholder", "Email *"))
-                .shouldHave(attribute("required"));
+    public void fillEmailField (String email) {
+        emailField.setValue(email);
     }
 
-    public void checkCompanyField () {
-        companyField.shouldHave(attribute("type", "text"))
-                .shouldHave(attribute("placeholder", "Компания"))
-                .shouldNotHave(attribute("required"));
+    public void fillCompanyField (String company) {
+        companyField.setValue(company);
     }
 
-    public void checkSubsCheckbox () {
-        subsCheckbox.shouldHave(attribute("type", "checkbox"))
-                .shouldHave(attribute("value", "Хочу получить бесплатную консультацию eCom-эксперта"))
-                .shouldNotHave(attribute("required"))
-                .shouldNotBe(checked);
+    public void sendForm () {
+        submitButton.click();
     }
 
-    public void checkSubmitButton () {
-        submitButton.shouldHave(attribute("type", "submit"))
-                .shouldHave(text("Получить руководство"));
+    public void checkSendForm () {
+        successfulMessage.shouldHave(text("Спасибо! Мы отправили руководство по продвижению интернет-магазина на вашу электронную почту."));
     }
 }

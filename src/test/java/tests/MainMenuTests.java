@@ -13,7 +13,6 @@ import pages.components.MainMenu;
 import static io.qameta.allure.Allure.step;
 
 @Tag("main_menu")
-@Tag("smoke")
 @DisplayName("Проверка ссылок в главном меню")
 public class MainMenuTests extends TestBase{
     MainMenu menu = new MainMenu();

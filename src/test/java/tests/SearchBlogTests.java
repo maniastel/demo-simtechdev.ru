@@ -13,10 +13,8 @@ import pages.components.SearchBar;
 import static io.qameta.allure.Allure.step;
 
 @Tag("search")
-@Tag("smoke")
 @DisplayName("Проверка поиска на странице Блог")
 public class SearchBlogTests extends TestBase{
-
     SearchResultPage search = new SearchResultPage();
     SearchBar searchBar = new SearchBar();
     BlogPage blog = new BlogPage();

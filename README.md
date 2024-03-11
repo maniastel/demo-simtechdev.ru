@@ -1,5 +1,9 @@
 # Проект по автоматизации тестирования для компании [Simtech Development](https://simtechdev.ru/)
 
+<p align="center">
+<img src="images/screen/simtechdev.png"  >
+</p>
+
 > Simtech Development — Разработка комплексных e‑Commerce решений: веб-разработка, мобильные и инфраструктурные решения, дизайн, тестирование и системная интеграция для B2B, B2C и D2C.
 
 ## **Содержание:**

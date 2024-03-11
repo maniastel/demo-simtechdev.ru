@@ -11,7 +11,6 @@ import pages.components.SubscriptionBar;
 import static io.qameta.allure.Allure.step;
 
 @Tag("subscription")
-@Tag("smoke")
 @DisplayName("Тесты для проверки подписки на странице Блог")
 public class SubscriptionTests extends TestBase {
     BlogPage blog = new BlogPage();
