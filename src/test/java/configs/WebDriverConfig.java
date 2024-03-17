@@ -2,14 +2,13 @@ package configs;
 
 import org.aeonbits.owner.Config;
 
-import java.net.URL;
 
 @Config.Sources({
         "classpath:${env}.properties"
 })
 public interface WebDriverConfig extends Config {
     @Key("browser")
-    @DefaultValue("chrome")
+    @DefaultValue("CHROME")
     String browser();
 
     @Key("browserVersion")
@@ -26,7 +25,7 @@ public interface WebDriverConfig extends Config {
 
     @Key("remoteUrl")
     @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
-    URL remoteUrl();
+    String remoteUrl();
 
     @Key("isRemote")
     @DefaultValue("false")

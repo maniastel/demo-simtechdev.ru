@@ -1,7 +1,6 @@
 package tests;
 
 import data.TestData;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,15 +15,12 @@ public class SubscriptionTests extends TestBase {
     BlogPage blog = new BlogPage();
     SubscriptionBar subs = new SubscriptionBar();
     TestData data = new TestData();
-    @BeforeEach
-    public void setUp() {
-        step("Открываем страницу блога", () ->
-                blog.openBlogPage());
-    }
 
     @Test
     @DisplayName("Подписка на новости компании")
     public void subscribeEmailTest() {
+        step("Открываем страницу блога", () ->
+                blog.openBlogPage());
         step("Вводим почту пользователя", () ->
                 subs.setEmail(data.email));
         step("Нажимаем кнопку Подписаться", () ->
@@ -36,6 +32,8 @@ public class SubscriptionTests extends TestBase {
     @Test
     @DisplayName("Отправка почты неверного формата")
     public void subscribeNotCorrectEmailTest() {
+        step("Открываем страницу блога", () ->
+                blog.openBlogPage());
         step("Вводим почту пользователя", () ->
                 subs.setEmail("test@"));
         step("Нажимаем кнопку Подписаться", () ->

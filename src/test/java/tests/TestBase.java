@@ -16,6 +16,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
 
 
 public class TestBase {
@@ -45,7 +46,9 @@ public class TestBase {
     @BeforeEach
     void addListener() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        open("");
     }
+
 
     @AfterEach
     void addAttachment() {

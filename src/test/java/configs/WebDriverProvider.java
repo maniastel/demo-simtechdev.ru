@@ -1,48 +1,30 @@
 package configs;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.Browser;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.util.Objects;
-import java.util.function.Supplier;
+import java.util.Map;
 
-public class WebDriverProvider implements Supplier<WebDriver> {
-    private final WebDriverConfig config;
+public class WebDriverProvider {
+    public static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class);
 
-    public WebDriverProvider() {
-        this.config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-    }
+    public static void setConfig() {
+        Configuration.baseUrl = config.baseUrl();
+        Configuration.browser = config.browser();
+        Configuration.browserVersion = config.browserVersion();
+        Configuration.browserSize = config.browserSize();
+        Configuration.pageLoadStrategy = "eager";
 
-    @Override
-    public WebDriver get() {
-        WebDriver driver = createWebDriver();
-        driver.get(config.baseUrl());
-        return driver;
-    }
-
-    private WebDriver createWebDriver() {
-        if (Objects.isNull(config.remoteUrl())) {
-            if (config.browser().equals(Browser.CHROME.toString())) {
-                WebDriverManager.chromedriver().setup();
-                return new ChromeDriver();
-            } else if (config.browser().equals(Browser.FIREFOX.toString())) {
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
-            }
-        } else {
-            if (config.browser().equals(Browser.CHROME.toString())) {
-                return new RemoteWebDriver(config.remoteUrl(), new ChromeOptions());
-            } else if (config.browser().equals(Browser.FIREFOX.toString())) {
-                return new RemoteWebDriver(config.remoteUrl(), new FirefoxOptions());
-            }
+        if (config.isRemote()) {
+            Configuration.remote = config.remoteUrl();
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
+            Configuration.browserCapabilities = capabilities;
         }
-        throw new RuntimeException("No such browser");
     }
+
 }

@@ -1,6 +1,5 @@
 package tests;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -19,15 +18,11 @@ public class SearchBlogTests extends TestBase{
     SearchBar searchBar = new SearchBar();
     BlogPage blog = new BlogPage();
 
-    @BeforeEach
-    public void setUp() {
-        step("Открываем страницу блога", () ->
-                blog.openBlogPage());
-    }
-
     @ValueSource(strings = {"товары", "маркетплейс"} )
     @ParameterizedTest(name = "Поиск {0} на странице Блог")
     public void searchOnBlogPageTest (String searchQuery) {
+        step("Открываем страницу блога", () ->
+                blog.openBlogPage());
         step("Вводим поисковое значение в поле поиска", () ->
                 searchBar.setSearchQuery(searchQuery));
         step("Проверяем, что результат поиска больше 0", () ->
@@ -37,6 +32,8 @@ public class SearchBlogTests extends TestBase{
     @ValueSource(strings = {"продукт", "промоакции"})
     @ParameterizedTest(name = "Открытие статьи на странице результата поиска статей по: {0}")
     public void openBlogArticleOnSearchResultPageTest (String searchQuery) {
+        step("Открываем страницу блога", () ->
+                blog.openBlogPage());
         step("Вводим поисковое значение в поле поиска", () ->
                 searchBar.setSearchQuery(searchQuery));
         step("Проверяем, что результат поиска больше 0", () ->

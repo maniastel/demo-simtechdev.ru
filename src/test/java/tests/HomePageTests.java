@@ -2,7 +2,6 @@ package tests;
 
 import data.TestData;
 import org.junit.jupiter.api.*;
-import pages.HomePage;
 import pages.OnlineStoreAdvancementPage;
 import pages.components.CookiePopup;
 import pages.components.MainMenu;
@@ -18,15 +17,8 @@ public class HomePageTests extends TestBase {
      RequestForm form = new RequestForm();
      CookiePopup cookie = new CookiePopup();
      TopBanner  banner = new TopBanner();
-     HomePage hp = new HomePage();
      OnlineStoreAdvancementPage page = new OnlineStoreAdvancementPage();
      TestData data = new TestData();
-
-    @BeforeEach
-    public void setUp() {
-        step("Открываем домашнюю страницу", () ->
-                hp.openHomePage());
-    }
 
      @DisplayName("Принятие соглашение об использовании cookie")
      @Test

@@ -1,13 +1,12 @@
 package tests;
 
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import pages.HomePage;
+
 import pages.components.MainMenu;
 
 import static io.qameta.allure.Allure.step;
@@ -16,13 +15,6 @@ import static io.qameta.allure.Allure.step;
 @DisplayName("Проверка ссылок в главном меню")
 public class MainMenuTests extends TestBase{
     MainMenu menu = new MainMenu();
-    HomePage hp = new HomePage();
-
-    @BeforeEach
-    public void setUp() {
-        step("Открываем домашнюю страницу", () ->
-                hp.openHomePage());
-    }
 
     @ValueSource(strings = {
             "Решения", "Услуги", "CS-Cart", "Инфраструктура", "О компании", "Блог", "Helpdesk"

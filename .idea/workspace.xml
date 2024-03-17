@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="changed readme.md">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/sd.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configs/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configs/ProjectConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/pdf-test.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/remote.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OnlineStoreAdvancementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OnlineStoreAdvancementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/components/RequestForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/components/RequestForm.java" afterDir="false" />
+    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" afterDir="false" />
@@ -77,6 +59,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -115,7 +98,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mariastelmah/IdeaProjects/simtechdev.ru/src/test/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mariastelmah/IdeaProjects/simtechdev.ru&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -123,19 +106,22 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/screen" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test/java/configs" />
       <recent name="$PROJECT_DIR$/images/logo" />
-      <recent name="$PROJECT_DIR$/images/screen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/resources/test_data" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/images/screen" />
       <recent name="$PROJECT_DIR$/notifications" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.simtechdev.ru [allureServe]">
-    <configuration name="HomePageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainMenuTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +134,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.HomePageTests&quot;" />
+            <option value="&quot;tests.MainMenuTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,7 +145,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HomePageTests.cookiePopupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchBlogTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,9 +156,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":search" />
             <option value="--tests" />
-            <option value="&quot;tests.HomePageTests.cookiePopupTest&quot;" />
+            <option value="&quot;tests.SearchBlogTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -256,10 +242,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.simtechdev.ru [allureServe]" />
+        <item itemvalue="Gradle.SearchBlogTests" />
+        <item itemvalue="Gradle.MainMenuTests" />
         <item itemvalue="Gradle.SubscriptionTests" />
         <item itemvalue="Gradle.SubscriptionTests.subscribeUserTest" />
-        <item itemvalue="Gradle.HomePageTests" />
-        <item itemvalue="Gradle.HomePageTests.cookiePopupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +409,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708959551753</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added fixes">
+      <option name="closed" value="true" />
+      <created>1710158563797</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710158563797</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1710158687944</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710158687944</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1710165328716</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710165328716</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +453,6 @@
     <MESSAGE value="added task tags" />
     <MESSAGE value="fixes" />
     <MESSAGE value="added notifications" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="added pages" />
     <MESSAGE value="added readme.md" />
     <MESSAGE value="fixed comments, added new tests for subscription" />
@@ -453,6 +462,8 @@
     <MESSAGE value="changed configuration telegram.json" />
     <MESSAGE value="changed css locator" />
     <MESSAGE value="changed readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed readme.md" />
+    <MESSAGE value="added fixes" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>
