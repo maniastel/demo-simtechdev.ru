@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 
-import java.util.Arrays;
+
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -22,26 +22,27 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        WebDriverConfig webDriverConfig = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
-        Configuration.baseUrl = webDriverConfig.baseUrl();
-        Configuration.browser = webDriverConfig.browser();
-        Configuration.browserVersion = webDriverConfig.browserVersion();
-        Configuration.browserSize = webDriverConfig.browserSize();
+        Configuration.browser = config.getBrowserName();
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.browserVersion = config.getBrowserVersion();
         Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 3000;
+        Configuration.timeout = 30000;
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://simtechdev.ru");
 
-        if (webDriverConfig.isRemote()) {
-            Configuration.remote = String.valueOf(webDriverConfig.remoteUrl());
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("selenoid:options", Map.of(
-                    "enableVNC", true,
-                    "enableVideo", true,
-                    "env", Arrays.asList("LANG=ru_RU.UTF-8", "LANGUAGE=ru:ru", "LC_ALL=ru_RU.UTF=8")
-            ));
-            Configuration.browserCapabilities = capabilities;
+        if (config.isRemote()) {
+            Configuration.remote
+                    = config.getRemoteWebDriver();
         }
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+        Configuration.browserCapabilities = capabilities;
     }
+
 
     @BeforeEach
     void addListener() {

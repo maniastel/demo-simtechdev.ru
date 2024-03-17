@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="refactoring">
+    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="fixed issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainMenuTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchBlogTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SubscriptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SubscriptionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710165328716</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fixed issues">
+      <option name="closed" value="true" />
+      <created>1710674925672</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1710674925672</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,6 +466,7 @@
     <MESSAGE value="changed readme.md" />
     <MESSAGE value="added fixes" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="fixed issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed issues" />
   </component>
 </project>

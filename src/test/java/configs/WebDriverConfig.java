@@ -2,30 +2,23 @@ package configs;
 
 import org.aeonbits.owner.Config;
 
-
 @Config.Sources({
-        "classpath:${env}.properties"
+        "classpath:${env}.properties",
 })
+
 public interface WebDriverConfig extends Config {
+
     @Key("browser")
     @DefaultValue("CHROME")
-    String browser();
+    String getBrowserName();
 
-    @Key("browserVersion")
+    @Key("version")
     @DefaultValue("120.0")
-    String browserVersion();
+    String getBrowserVersion();
 
-    @Key("browserSize")
-    @DefaultValue("1920x1080")
-    String browserSize();
-
-    @Key("baseUrl")
-    @DefaultValue("https://simtechdev.ru/")
-    String baseUrl();
-
-    @Key("remoteUrl")
+    @Key("remote")
     @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
-    String remoteUrl();
+    String getRemoteWebDriver();
 
     @Key("isRemote")
     @DefaultValue("false")
