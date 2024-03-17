@@ -28,7 +28,7 @@ public class TestBase {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 30000;
+        Configuration.timeout = 60000;
         Configuration.baseUrl = System.getProperty("baseUrl", "https://simtechdev.ru");
 
         if (config.isRemote()) {
@@ -46,7 +46,7 @@ public class TestBase {
 
     @BeforeEach
     void addListener() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide());
         open("");
     }
 
