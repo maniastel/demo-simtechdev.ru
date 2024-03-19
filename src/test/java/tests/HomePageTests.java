@@ -29,7 +29,7 @@ public class HomePageTests extends TestBase {
                  cookie.acceptCookie());
      }
 
-     @DisplayName("Отправка формы с заполнением всех полей")
+     @DisplayName("Неуспешная отправка формы с заполнением всех полей из-за рекапчи")
      @Test
      public void successfulFormSendTest() {
          step("Нажимаем на кнопку Оставить заявку", () ->

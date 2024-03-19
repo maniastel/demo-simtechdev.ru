@@ -17,7 +17,7 @@ public class RequestForm {
                     messageField = $("#form-field-message"),
                     uploadFile = $("#form-field-field_6894ad8"),
                     submitButton = $("#submit_cta_btn"),
-                    successfulMessage = $(".elementor-message.elementor-message-success");
+                    unsuccessfulMessage = $("elementor-message elementor-message-danger");
 
     public void checkTitleForm () {
         formTitle.shouldHave(text("Обсудим ваш проект?"));
@@ -60,6 +60,6 @@ public class RequestForm {
     }
 
     public void checkSendForm () {
-        successfulMessage.shouldHave(text("Спасибо! Мы получили ваше сообщение"));
+        unsuccessfulMessage.shouldHave(text("Проверка reCAPTCHA V3 не удалась, подозрение на злоупотребление"));
     }
 }
