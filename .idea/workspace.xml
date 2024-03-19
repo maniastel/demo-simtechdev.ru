@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="fixed issues">
+    <list default="true" id="a4a2411f-9208-43b5-a29f-f441ce408ac2" name="Changes" comment="changed properties">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configs/WebDriverProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mariastelmah/IdeaProjects/simtechdev.ru&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -114,7 +113,7 @@
       <recent name="$PROJECT_DIR$/notifications" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.simtechdev.ru [allureServe]">
+  <component name="RunManager" selected="Gradle.MainMenuTests">
     <configuration name="MainMenuTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,9 +234,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.simtechdev.ru [allureServe]" />
-        <item itemvalue="Gradle.SearchBlogTests" />
         <item itemvalue="Gradle.MainMenuTests" />
+        <item itemvalue="Gradle.SearchBlogTests" />
+        <item itemvalue="Gradle.simtechdev.ru [allureServe]" />
         <item itemvalue="Gradle.SubscriptionTests" />
         <item itemvalue="Gradle.SubscriptionTests.subscribeUserTest" />
       </list>
@@ -247,6 +246,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
+        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-96c0d24d" />
       </set>
     </attachedChunks>
   </component>
@@ -435,7 +435,39 @@
       <option name="project" value="LOCAL" />
       <updated>1710674925672</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1710684764875</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1710684764875</updated>
+    </task>
+    <task id="LOCAL-00024" summary="bug fixes">
+      <option name="closed" value="true" />
+      <created>1710699518691</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710699518691</updated>
+    </task>
+    <task id="LOCAL-00025" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1710700982839</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710700982839</updated>
+    </task>
+    <task id="LOCAL-00026" summary="changed properties">
+      <option name="closed" value="true" />
+      <created>1710701234835</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710701234835</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,8 +497,11 @@
     <MESSAGE value="changed css locator" />
     <MESSAGE value="changed readme.md" />
     <MESSAGE value="added fixes" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="fixed issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed issues" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="bug fixes" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="changed properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed properties" />
   </component>
 </project>
